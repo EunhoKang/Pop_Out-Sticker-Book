@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
+  <Tracking>
+    <ImageTarget name="U" size="1.000000 1.005000" />
+    <ImageTarget name="stomach1" size="1.000000 1.010000" />
+    <ImageTarget name="stomach" size="1.000000 1.010000" />
+    <ImageTarget name="Sr" size="1.000000 1.000000" />
+    <ImageTarget name="phenolphthalein" size="1.000000 0.995000" />
+    <ImageTarget name="PH_test" size="1.000000 1.000000" />
+    <ImageTarget name="Nu" size="1.000000 1.000000" />
+    <ImageTarget name="Na" size="1.000000 1.005000" />
+    <ImageTarget name="metil_orange" size="1.000000 1.005000" />
+    <ImageTarget name="lung" size="1.000000 1.010000" />
+    <ImageTarget name="liver" size="1.000000 1.010000" />
+    <ImageTarget name="litmus" size="1.000000 1.000000" />
+    <ImageTarget name="Li" size="1.000000 1.005000" />
+    <ImageTarget name="large-intestine" size="1.000000 1.010000" />
+    <ImageTarget name="heart" size="1.000000 1.010000" />
+    <ImageTarget name="Cu" size="1.000000 1.000000" />
+    <ImageTarget name="cabbage" size="1.000000 1.000000" />
+    <ImageTarget name="Ca" size="1.000000 1.005000" />
+    <ImageTarget name="bladder" size="1.000000 1.010000" />
+    <ImageTarget name="Ba" size="1.000000 1.005000" />
+    <ImageTarget name="color_fire" size="1.000000 1.415525" />
+    <ImageTarget name="frog" size="1.000000 1.420389" />
+    <ImageTarget name="newclear" size="1.000000 1.420389" />
+    <ImageTarget name="PH" size="1.000000 0.704032" />
+  </Tracking>
+</QCARConfig>

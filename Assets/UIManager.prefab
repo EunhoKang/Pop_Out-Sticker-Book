@@ -1,0 +1,127 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &696274584761523459
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 696274584761523457}
+  - component: {fileID: 696274584761523456}
+  m_Layer: 0
+  m_Name: UIManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &696274584761523457
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 696274584761523459}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 365.04916, y: 209.78406, z: -75.55899}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &696274584761523456
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 696274584761523459}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b3d82277cc32094cbbda06ee98c63a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SceneName: {fileID: 0}
+  Main_text: {fileID: 0}
+  page_num: 0
+  pages_name: 
+  DataRead: 0
+  index: 0
+  MenuCanvas: {fileID: 0}
+  OX: {fileID: 0}
+  quiz_corret: {fileID: 0}
+  quiz_fail: {fileID: 0}
+  values1: []
+  events1: []
+  values2: []
+  events2: []
+  values3:
+  - "\uC54C\uB85D\uB2EC\uB85D \uC0C9\uC774 \uB2E4\uB978 \uBD88\uAF43!"
+  - "\uC774\uBC88 \uC2E4\uD5D8\uC740 \uBD88\uAF43\uC5D0 \uB2E4\uC591\uD55C \uAE08\uC18D\uC6D0\uC18C\uB97C
+    \uB123\uC5B4\uC11C \uBD88\uAF43\uC758 \uC0C9\uC744 \uBC14\uAFB8\uB294 \uC2E4\uD5D8\uC744
+    \uD574\uBCFC \uAC70\uC5D0\uC694."
+  - "\uBD88\uAF43 \uBC18\uC751\uC774\uB780 \uAE08\uC18D \uC6D0\uC18C\uB97C \uBD88\uAF43\uC5D0
+    \uB123\uC5C8\uC744 \uB54C \uBD88\uAF43\uC758 \uC6D0\uC18C\uC5D0 \uB530\uB77C \uBCC0\uD558\uB294
+    \uD604\uC0C1\uC774\uC5D0\uC694."
+  - "\uADF8\uAC74 \uBB3C\uC9C8\uC758 \uC804\uC790\uB4E4\uC774 \uC5F4\uC744 \uBC1B\uC544
+    \uBE5B\uC5D0\uB108\uC9C0\uB97C \uBC29\uCD9C\uD558\uAC8C \uB418\uB294\uB370, \uBB3C\uC9C8\uB9C8\uB2E4
+    \uBE5B\uC758 \uD30C\uC7A5\uC774 \uB2E4\uB974\uAE30 \uB54C\uBB38\uC5D0 \uAC01\uAC01
+    \uB2E4\uB978 \uC0C9\uC774 \uB098\uC624\uAC8C \uB41C\uB2F5\uB2C8\uB2E4!"
+  - "\uADF8\uB7EC\uBA74 \uC9C1\uC811 \uC2E4\uD5D8\uC744 \uD574\uBCFC\uAE4C\uC694?
+    \uC54C\uCF54\uC62C \uB7A8\uD504\uC758 \uBD88\uAF43\uC5D0 \uAE08\uC18D \uC6D0\uC18C
+    \uD1A0\uD070\uC744 \uAC00\uC838\uB2E4 \uB300\uBCF4\uB3C4\uB85D \uD574\uC694!"
+  - "\uAE08\uC18D \uD1A0\uD070\uC744 \uCC3E\uC544 \uCC45 \uC704\uC5D0 \uD558\uB098\uC529
+    \uC62C\uB824\uBCF4\uC138\uC694!"
+  - "Q1.\uB178\uB780\uC0C9 \uBD88\uAF43\uC774 \uB098\uC624\uB294 \uAE08\uC18D \uC6D0\uC18C\uB294
+    \uBB34\uC5C7\uC77C\uAE4C\uC694?"
+  - "Q2.\uC8FC\uD669\uC0C9 \uBD88\uAF43\uC774 \uB098\uC624\uB294 \uAE08\uC18D \uC6D0\uC18C\uB294
+    \uBB34\uC5C7\uC77C\uAE4C\uC694?"
+  - "\uC774\uAC83\uC73C\uB85C \uC2E4\uD5D8\uC744 \uC885\uB8CC\uD558\uACA0\uC2B5\uB2C8\uB2E4!"
+  - "\uB098\uD2B8\uB968\uC740 \uB178\uB780\uC0C9 \uBD88\uAF43\uC774 \uB098\uC624\uB124\uC694."
+  - "\uB9AC\uD2AC\uC740 \uBE68\uAC04\uC0C9 \uBD88\uAF43\uC774 \uB098\uC624\uB124\uC694."
+  - "\uCE7C\uB968\uC740 \uBCF4\uB77C\uC0C9 \uBD88\uAF43\uC774 \uB098\uC624\uB124\uC694."
+  - "\uAD6C\uB9AC\uB294 \uCCAD\uB85D\uC0C9 \uBD88\uAF43\uC774 \uB098\uC624\uB124\uC694."
+  - "\uBC14\uB968\uC740 \uD669\uB85D\uC0C9 \uBD88\uAF43\uC774 \uB098\uC624\uB124\uC694."
+  - "\uCE7C\uC298\uC740 \uC8FC\uD669\uC0C9 \uBD88\uAF43\uC774 \uB098\uC624\uB124\uC694."
+  - "\uC2A4\uD2B8\uB860\uD2AC\uC740 \uC9C4\uD55C \uBE68\uAC04\uC0C9 \uBD88\uAF43\uC774
+    \uB098\uC624\uB124\uC694."
+  events3:
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - -1
+  - 2
+  - 2
+  - 4
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  values4: []
+  events4: []
+  answer1: 
+  answer2: 
+  answer3: 
+  answer4: 
+  test1: 
+  test2: 
+  test3: 0400000005000000060000000700000008000000090000000a000000
+  test4: 
+  prefab1: []
+  prefab2: []
+  prefab3:
+  - {fileID: 6685443417988527887, guid: 686b32fe7f54c97429809c27ab23fb65, type: 3}
+  - {fileID: 6685443417988527887, guid: 686b32fe7f54c97429809c27ab23fb65, type: 3}
+  - {fileID: 6685443417988527887, guid: 686b32fe7f54c97429809c27ab23fb65, type: 3}
+  - {fileID: 6685443417988527887, guid: 686b32fe7f54c97429809c27ab23fb65, type: 3}
+  - {fileID: 6685443417988527887, guid: 686b32fe7f54c97429809c27ab23fb65, type: 3}
+  - {fileID: 6685443417988527887, guid: 686b32fe7f54c97429809c27ab23fb65, type: 3}
+  - {fileID: 6685443417988527887, guid: 686b32fe7f54c97429809c27ab23fb65, type: 3}
+  prefab4: []

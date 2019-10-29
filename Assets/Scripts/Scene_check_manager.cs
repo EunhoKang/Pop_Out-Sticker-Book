@@ -70,70 +70,84 @@ public class Scene_check_manager : MonoBehaviour
         Ui_Manager.instance.SceneName_control(check_num);
 
         //여기부턴 토큰 인식 부분 
-        
+
         //3페이지 인식 - 시연
 
-        if(Ui_Manager.instance.page_num == 2){
-            if((Ui_Manager.instance.events[Ui_Manager.instance.page_num][Ui_Manager.instance.index] == "-1") ){
-            //0:나트륨 1:리튬  2:구리 3:바륨 4:칼슘 5:스트론튬
+        if (Ui_Manager.instance.page_num == 2)
+        {
+            if ((Ui_Manager.instance.events[Ui_Manager.instance.page_num][Ui_Manager.instance.index] == "-1"))
+            {
+                //0:나트륨 1:리튬  2:구리 3:바륨 4:칼슘 5:스트론튬
 
-            //불꼿 싹다 꺼주기
-            foreach(GameObject a in Object_Manager.instance.page_3){
-                a.SetActive(false);
-            }
-            
-            if(name =="Na"){
-                //오브젝트 매니저에서 특정 온
-                Object_Manager.instance.page_3[0].SetActive(true);
+                //불꼿 싹다 꺼주기
+                foreach (GameObject a in Object_Manager.instance.page_3)
+                {
+                    a.SetActive(false);
+                }
 
-            }
-            else if(name =="Li"){
-                Object_Manager.instance.page_3[1].SetActive(true);
+                if (name == "Na")
+                {
+                    //오브젝트 매니저에서 특정 온
+                    //텍스트 온해야함
+                    Object_Manager.instance.page_3[0].SetActive(true);
 
-            }
-            else if(name =="Cu"){
-                Object_Manager.instance.page_3[2].SetActive(true);
+                }
+                else if (name == "Li")
+                {
+                    Object_Manager.instance.page_3[1].SetActive(true);
 
-            }
-            else if(name =="Ba"){
-                Object_Manager.instance.page_3[3].SetActive(true);
+                }
+                else if (name == "Cu")
+                {
+                    Object_Manager.instance.page_3[2].SetActive(true);
 
-            }
-            else if(name =="Ca"){
-                Object_Manager.instance.page_3[4].SetActive(true);
+                }
+                else if (name == "Ba")
+                {
+                    Object_Manager.instance.page_3[3].SetActive(true);
 
-            }
-            else if(name =="Sr"){
-                Object_Manager.instance.page_3[5].SetActive(true);
+                }
+                else if (name == "Ca")
+                {
+                    Object_Manager.instance.page_3[4].SetActive(true);
 
-            }
-            
-            
-            
+                }
+                else if (name == "Sr")
+                {
+                    Object_Manager.instance.page_3[5].SetActive(true);
+
+                }
+
+
+
 
             }
             Debug.Log(Ui_Manager.instance.events[Ui_Manager.instance.page_num][Ui_Manager.instance.index]);
             Debug.Log(Ui_Manager.instance.trackpoint);
             Debug.Log(Ui_Manager.instance.index);
-            
 
-        
+
+
             //3페이지 인식 - 미션의 경우1
-            if((Ui_Manager.instance.events[Ui_Manager.instance.page_num][Ui_Manager.instance.index] == "2") && ((Ui_Manager.instance.trackpoint) + 1 == Ui_Manager.instance.index)){
+            if ((Ui_Manager.instance.events[Ui_Manager.instance.page_num][Ui_Manager.instance.index] == "2") && ((Ui_Manager.instance.trackpoint) + 1 == Ui_Manager.instance.index))
+            {
                 Debug.Log("Sdsdsds");
 
-                foreach(GameObject a in Object_Manager.instance.page_3){
+                foreach (GameObject a in Object_Manager.instance.page_3)
+                {
                     a.SetActive(false);
-                
+
                 }
 
-                foreach(GameObject a in Object_Manager.instance.page_3_te){
+                foreach (GameObject a in Object_Manager.instance.page_3_te)
+                {
                     a.SetActive(false);
-                
+
                 }
 
                 //0:나트륨 1:리튬 2:칼륨 3:구리 4:바륨 5:칼슘 6:스트론튬
-                if(name =="Sr"){
+                if (name == "Sr")
+                {
                     //오브젝트 매니저에서 특정 온
                     Object_Manager.instance.page_3[2].SetActive(true);
                     Object_Manager.instance.page_3_te[0].SetActive(true);
@@ -141,50 +155,96 @@ public class Scene_check_manager : MonoBehaviour
                     MyAudioManager.instance.Clear_bgm.Play();
 
                 }
-                else{
+                else
+                {
                     Object_Manager.instance.page_3_te[1].SetActive(true);
                     MyAudioManager.instance.false_bgm.Play();
 
                 }
-                
-                
-                
+
+
+
 
             }
 
-            else if((Ui_Manager.instance.events[Ui_Manager.instance.page_num][Ui_Manager.instance.index] == "2") && ((Ui_Manager.instance.trackpoint) + 2 == Ui_Manager.instance.index)){
+            else if ((Ui_Manager.instance.events[Ui_Manager.instance.page_num][Ui_Manager.instance.index] == "2") && ((Ui_Manager.instance.trackpoint) + 2 == Ui_Manager.instance.index))
+            {
 
-                foreach(GameObject a in Object_Manager.instance.page_3){
+                foreach (GameObject a in Object_Manager.instance.page_3)
+                {
                     a.SetActive(false);
-                
+
                 }
 
-                foreach(GameObject a in Object_Manager.instance.page_3_te){
+                foreach (GameObject a in Object_Manager.instance.page_3_te)
+                {
                     a.SetActive(false);
-                
+
                 }
 
                 //0:나트륨 1:리튬 2:칼륨 3:구리 4:바륨 5:칼슘 6:스트론튬
-                
-                if(name =="Ca"){
+
+                if (name == "Ca")
+                {
                     Object_Manager.instance.page_3[4].SetActive(true);
                     Object_Manager.instance.page_3_te[0].SetActive(true);
                     Ui_Manager.instance.Quiz_token(true);
                     MyAudioManager.instance.Clear_bgm.Play();
 
                 }
-                else{
+                else
+                {
                     Object_Manager.instance.page_3_te[1].SetActive(true);
                     MyAudioManager.instance.false_bgm.Play();
 
                 }
-                
-                
-                
+
+
+
 
             }
 
 
+        }
+
+        //2페이지의 경우
+
+        else if (Ui_Manager.instance.page_num == 1)
+        {
+            if ((Ui_Manager.instance.events[Ui_Manager.instance.page_num][Ui_Manager.instance.index] == "-1"))
+            {
+                //0: 중성자 1:우라늄
+
+                //불꼿 싹다 꺼주기
+                foreach (GameObject a in Object_Manager.instance.page_2)
+                {
+                    a.SetActive(false);
+                }
+
+                if (name == "Nu")
+                {
+                    //오브젝트 매니저에서 특정 온
+                    //텍스트 온해야함
+                    Object_Manager.instance.page_2[0].SetActive(true);
+
+                }
+                else if (name == "U")
+                {
+                    Object_Manager.instance.page_2[1].SetActive(true);
+
+                }
+
+
+
+
+
+            }
+
+            if ((Ui_Manager.instance.events[Ui_Manager.instance.page_num][Ui_Manager.instance.index] == "1") && ((Ui_Manager.instance.trackpoint) + 1 == Ui_Manager.instance.index))
+            {
+                Debug.Log("Mission!!");
+
+            }
         }
 
         

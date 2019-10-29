@@ -37,6 +37,9 @@ public class Object_Manager : MonoBehaviour
     public GameObject[] page_3;
     public GameObject[] page_3_te;
 
+    public GameObject[] page_2;
+    public GameObject[] page_2_te;
+
     
     // Start is called before the first frame update
 

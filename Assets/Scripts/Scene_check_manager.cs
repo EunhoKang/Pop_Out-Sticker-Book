@@ -82,7 +82,9 @@ public class Scene_check_manager : MonoBehaviour
                 //불꼿 싹다 꺼주기
                 foreach (GameObject a in Object_Manager.instance.page_3)
                 {
+                    Debug.Log("sd");
                     a.SetActive(false);
+                    
                 }
 
                 if (name == "Na")
@@ -105,28 +107,28 @@ public class Scene_check_manager : MonoBehaviour
                 else if (name == "Cu")
                 {
                     Object_Manager.instance.page_3[2].SetActive(true);
-                    Ui_Manager.instance.Main_text.text = Ui_Manager.instance.values[2][11];
+                    Ui_Manager.instance.Main_text.text = Ui_Manager.instance.values[2][12];
                     //Ui_Manager.instance.Test_token(11);
 
                 }
                 else if (name == "Ba")
                 {
                     Object_Manager.instance.page_3[3].SetActive(true);
-                    Ui_Manager.instance.Main_text.text = Ui_Manager.instance.values[2][12];
+                    Ui_Manager.instance.Main_text.text = Ui_Manager.instance.values[2][13];
                     //.instance.Test_token(12);
 
                 }
                 else if (name == "Ca")
                 {
                     Object_Manager.instance.page_3[4].SetActive(true);
-                    Ui_Manager.instance.Main_text.text = Ui_Manager.instance.values[2][13];
+                    Ui_Manager.instance.Main_text.text = Ui_Manager.instance.values[2][14];
                     //Ui_Manager.instance.Test_token(13);
 
                 }
                 else if (name == "Sr")
                 {
                     Object_Manager.instance.page_3[5].SetActive(true);
-                    Ui_Manager.instance.Main_text.text = Ui_Manager.instance.values[2][14];
+                    Ui_Manager.instance.Main_text.text = Ui_Manager.instance.values[2][15];
                     //Ui_Manager.instance.Test_token(14);
 
                 }
@@ -234,14 +236,14 @@ public class Scene_check_manager : MonoBehaviour
                     a.SetActive(false);
                 }
 
-                if (name == "Nu")
+                if (name == "U")
                 {
                     //오브젝트 매니저에서 특정 온
                     //텍스트 온해야함
                     Object_Manager.instance.page_2[0].SetActive(true);
 
                 }
-                else if (name == "U")
+                else if (name == "Nu")
                 {
                     Object_Manager.instance.page_2[1].SetActive(true);
 

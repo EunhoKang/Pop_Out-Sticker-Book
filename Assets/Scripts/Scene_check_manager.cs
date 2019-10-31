@@ -90,31 +90,44 @@ public class Scene_check_manager : MonoBehaviour
                     //오브젝트 매니저에서 특정 온
                     //텍스트 온해야함
                     Object_Manager.instance.page_3[0].SetActive(true);
+                    Ui_Manager.instance.Main_text.text = Ui_Manager.instance.values[2][9];
+                    //Ui_Manager.instance.Test_token(9);
+                    
 
                 }
                 else if (name == "Li")
                 {
                     Object_Manager.instance.page_3[1].SetActive(true);
+                    Ui_Manager.instance.Main_text.text = Ui_Manager.instance.values[2][10];
+                    //Ui_Manager.instance.Test_token(10);
 
                 }
                 else if (name == "Cu")
                 {
                     Object_Manager.instance.page_3[2].SetActive(true);
+                    Ui_Manager.instance.Main_text.text = Ui_Manager.instance.values[2][11];
+                    //Ui_Manager.instance.Test_token(11);
 
                 }
                 else if (name == "Ba")
                 {
                     Object_Manager.instance.page_3[3].SetActive(true);
+                    Ui_Manager.instance.Main_text.text = Ui_Manager.instance.values[2][12];
+                    //.instance.Test_token(12);
 
                 }
                 else if (name == "Ca")
                 {
                     Object_Manager.instance.page_3[4].SetActive(true);
+                    Ui_Manager.instance.Main_text.text = Ui_Manager.instance.values[2][13];
+                    //Ui_Manager.instance.Test_token(13);
 
                 }
                 else if (name == "Sr")
                 {
                     Object_Manager.instance.page_3[5].SetActive(true);
+                    Ui_Manager.instance.Main_text.text = Ui_Manager.instance.values[2][14];
+                    //Ui_Manager.instance.Test_token(14);
 
                 }
 
@@ -149,7 +162,7 @@ public class Scene_check_manager : MonoBehaviour
                 if (name == "Sr")
                 {
                     //오브젝트 매니저에서 특정 온
-                    Object_Manager.instance.page_3[2].SetActive(true);
+                    Object_Manager.instance.page_3[5].SetActive(true);
                     Object_Manager.instance.page_3_te[0].SetActive(true);
                     Ui_Manager.instance.Quiz_token(true);
                     MyAudioManager.instance.Clear_bgm.Play();

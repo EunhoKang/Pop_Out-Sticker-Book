@@ -200,9 +200,10 @@ public class Ui_Manager : MonoBehaviour
     public void Main_text_Update()
     {
         //Debug.Log(index);
+        Main_text.text = values[page_num][index];
         if (DataRead)
         {
-            Main_text.text = values[page_num][index];
+            
             state.text = "이론";
             if (events[page_num][index]=="-1")
             {
@@ -236,6 +237,8 @@ public class Ui_Manager : MonoBehaviour
                 Scene_check_manager.instance.SceneStart = true;
 
             }
+
+            
         }
 
     }
@@ -267,15 +270,18 @@ public class Ui_Manager : MonoBehaviour
     {
         //시연 단계에서 토큰 인식이 된 순간 작동
         objects[page_num][testnum].SetActive(true); 
+        
         index += tests[page_num][testnum];
         Main_text_Update();
     }
+
     public void Quiz_token(bool answer) //토큰 인식과 퀴즈 판별은 다른 매니저에서
     {
         index++;
         Main_text_Update();
         //퀴즈 단계에서 토큰 인식이 된 순간 작동
     }
+
     public void Quiz_ox(int quiznum)
     {
 
